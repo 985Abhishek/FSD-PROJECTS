@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>welcome to the quiz show</h2>
+    <div class="question1">
+      <h3>who is the prime minister of India?</h3>
+      <input type="radio" id="first" name="option1" value="prime" checked  />
+      <label for="option1">Mr. Narendra Modi</label>
+      <input type="radio" id="1" name="option1" value="prime"  />
+      <label for="option1">Mr. Rahul Gandhi</label>
+      <input type="radio" id="I" name="option1" value="prime" />
+      <label for="option1">Dr. Manmohan Singh</label><br />
+      <h3>How many minutes are in a full week?</h3>
+      <input type="radio" id="2" name="option2" value="time" />
+      <label for="option1">10,080 Minutes</label>
+      <input type="radio" id="2" name="option2" value="time" />
+      <label for="option1">10,086 Minutes</label>
+      <input type="radio" id="2" name="option2" value="time"/>
+      <label for="option1">10,083 Minutes</label>
+      <h3>
+        What art form is described as "decorative handwriting or handwritten
+        lettering"? 
+      </h3>
+      <input type="radio" id="3" name="option3" value="writing" />
+      <label for="option1">Cursive</label>
+      <input type="radio" id="3" name="option3" value="writing"/>
+      <label for="option1">Times new roman</label>
+      <input type="radio" id="3" name="option3" value="writing"/>
+      <label for="option1">Calligraphy</label>
+      <button onclick="solution()">submit</button>
+    </div>
+
+    <script>
+    function solution() {
+       //let val =  document.querySelector('input[name="option1"]')
+       let inputs = document.getElementsByName('option1');
+       let val = document.querySelectorAll('input[name="option1"]:checked')[0].value;
+       let val2 =  document.querySelector('input[name="option2"].checked')  
+       let val3 =  document.querySelector('input[name="option3"].checked')  
+       let Correct = "Mr. Narendra Modi";
+       let Correct2 = "10,080 Minutes";
+       let Correct3 = "Calligraphy";
+       if ( val === Correct) {
+        alert("Correct Answer");
+      } else {
+        alert("Wrong Answer");
+      }
+      
+      if (val2.value === Correct2) {
+        alert("Correct Answer");
+      } else {
+        alert("Wrong Answer");
+      }
+      
+      if (val3.value === Correct3) {
+        alert("Correct Answer");
+      } else {
+        alert("Wrong Answer");
+      }
+    }
+
+    </script>
+  </body>
+</html>
