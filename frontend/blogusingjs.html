@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLOGGER</title>
+    <link rel="stylesheet" href="blogsusingjs.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="main">
+        <div>Articles</div>
+        <div>About Us</div>
+        <div>contact Us</div>
+        <div class="gallery">
+          <a href="gallery.html" target="_blank">Gallery</a>
+        </div>
+        <div>Address</div>
+      </nav>
+    </header>
+    <div class="border"></div>
+    <div class="text"><h2>Welcome to our Blog!</h2></div>
+    <main id="abcd">
+      <section>
+        <div class="box">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.3MxqaJv2Z5QsG7wIXzizjAHaEo&pid=Api&rs=1&c=1&qlt=95&w=167&h=104" alt="not found" />
+          <div class="boxe">
+            <p id="abc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum, nulla. Numquam ipsa voluptatum quia reiciendis, beatae
+              qui dolorem tempore illo.
+              <p class="text">published by ABC</p>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.3MxqaJv2Z5QsG7wIXzizjAHaEo&pid=Api&rs=1&c=1&qlt=95&w=167&h=104" alt="not found" />
+          <div class="boxe">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum, nulla. Numquam ipsa voluptatum quia reiciendis, beatae
+              qui dolorem tempore illo.
+              <p class="text">published by ABC</p>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.3MxqaJv2Z5QsG7wIXzizjAHaEo&pid=Api&rs=1&c=1&qlt=95&w=167&h=104" alt="not found" />
+          <div class="boxe">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum, nulla. Numquam ipsa voluptatum quia reiciendis, beatae
+              qui dolorem tempore illo.
+              <p class="text">published by ABC</p>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.3MxqaJv2Z5QsG7wIXzizjAHaEo&pid=Api&rs=1&c=1&qlt=95&w=167&h=104" alt="not found" />
+          <div class="boxe">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum, nulla. Numquam ipsa voluptatum quia reiciendis, beatae
+              qui dolorem tempore illo.
+              <p class="text">published by ABC</p>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.3MxqaJv2Z5QsG7wIXzizjAHaEo&pid=Api&rs=1&c=1&qlt=95&w=167&h=104" alt="not found" />
+          <div class="boxe">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum, nulla. Numquam ipsa voluptatum quia reiciendis, beatae
+              qui dolorem tempore illo.
+              <p class="text">published by ABC</p>
+            </p>
+          </div>
+        </div>
+      </section>
+      <button onclick ="this.style.backgroundColor = 'green'">Submit</button>
+    </main>
+    <script>
+      
+      let text_color = document.getElementsByClassName("text");
+      text_color[0].style.color = "red";
+      let font = document.getElementsByClassName("boxe")
+      for(let i=0;i<font.length;i++){
+        font[i].style.fontSize = "15px";
+      }
+
+
+
+
+
+      let italic = document.querySelectorAll(".text")
+      for(let i=0;i<italic.length;i++){
+      italic[i].style.fontFamily = "italic"
+      italic[i].style.fontSize = "32px"
+      italic[i].addEventListener("click",function(){
+        alert(italic[i].textContent)
+        italic[i].style.backgroundColor = "yellow"
+        italic[i].innerHTML = "manipulated by me | 1 min ago"
+        italic[i].innerHTML = "manipulated by me | 1 min ago"
+      })}
+
+
+
+
+
+
+
+
+      let border = document.getElementById("abcd")
+      border.style.border = "5px solid black"
+      let coloring = document.querySelectorAll(".box")
+      for(i=0;i<coloring.length;i++) {
+        if (i%2==1) {
+          coloring[i].style.backgroundColor = "red"  
+    
+        } else {
+          coloring[i].style.backgroundColor = "green"   
+            
+        }
+      }
+      
+    </script>
+  </body>
+</html>
